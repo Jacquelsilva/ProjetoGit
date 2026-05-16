@@ -1,9 +1,10 @@
-name: CI - Flask API
+name: Teste CI Inicial
 
 on:
   push:
     branches:
       - main
+      - feature-home-v2
 
 jobs:
   build:
@@ -16,10 +17,10 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Instalar dependências
-        run: pip install -r requirements.txt
+        run: pip install flask
 
       - name: Verificar sintaxe
-        run: python -m py_compile src/app.py
+        run: python -m py_compile app.py
