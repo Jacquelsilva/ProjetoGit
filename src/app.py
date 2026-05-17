@@ -11,9 +11,7 @@ def status():
     return {"status": "API online"}
 
 
-@app.route("/")
-def home():
-    return "Sistema de Biblioteca"
+
 
 
 @app.route("/sobre")
