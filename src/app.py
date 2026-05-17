@@ -6,10 +6,9 @@ app = Flask(__name__)
 def home():
     return {"mensagem": "API funcionando corretamente"}
 
-
-
-
-
+@app.route("/status")
+def status():
+    return {"status": "API online"}
 
 
 @app.route("/sobre")
