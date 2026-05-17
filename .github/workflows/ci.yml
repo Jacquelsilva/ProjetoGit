@@ -24,3 +24,7 @@ jobs:
 
       - name: Verificar sintaxe
         run: python -m py_compile src/app.py
+
+
+      - name: Executar arquivo inexistente
+      run: python erro.py
